@@ -13,3 +13,8 @@ class User(BaseModel):
 
     class Config():
         orm_mode = True
+
+class UserLogin(BaseModel):
+    
+    cellphone  : str
+    password   : str

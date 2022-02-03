@@ -4,6 +4,7 @@ from sqlalchemy.orm import sessionmaker
 import os
 
 SQLALCHEMY_DATABASE_URL = os.environ["DATABASE_URL"]
+#SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:Rodr!go87@127.0.0.1:3306/fast_api_example"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, 
